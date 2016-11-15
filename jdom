@@ -4,4 +4,12 @@ JDOM 直接为JAVA编程服务。它利用更为强有力的JAVA语言的诸多�
 在使用设计上尽可能地隐藏原来使用XML过程中的复杂性。利用JDOM处理XML文档将是一件轻松、简单的事。
 JDOM 在2000年的春天被Brett McLaughlin和Jason Hunter开发出来，以弥补DOM及SAX在实际应用当中的不足之处。
 这些不足之处主要在于SAX没有文档修改、随机访问以及输出的功能，而对于DOM来说，JAVA程序员在使用时来用起来总觉得不太方便。
-DOM的缺点主要是来自于由于Dom是一个接口定义语言（IDL）,它的任务是在不同语言实现中的一 个最低的通用标准，并不是为JAVA特别设计的。JDOM的最新版本为JDOM Beta 9。最近JDOM被收录到JSR-102内，这标志着JDOM成为了JAVA平台组成的一部分。
+二、JDOM组成
+JDOM是由以下几个包组成的
+org.jdom包含了所有的xml文档要素的java类
+org.jdom.adapters包含了与dom适配的java类
+org.jdom.filter包含了xml文档的过滤器类
+org.jdom.input包含了读取xml文档的类
+org.jdom.output包含了写入xml文档的类
+org.jdom.transform包含了将jdomxml文档接口转换为其他xml文档接口
+org.jdom.xpath包含了对xml文档xpath操作的类
