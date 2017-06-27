@@ -1,6 +1,0 @@
-1.MySQL_benchwork使用
-2.两个项目mbus和tradecenter,tradecenter涉及根据交易订单查询物流订单等，以及退货处理。
-3.debug项目，弄懂流程，DB改变以后传到mbus,mbus将数据库改变传到topic,交易中心tradecenter从topic拿数据用来进行业务，保持数据为更新后的状态。
-4.handler组件作用：组合主键，通过将数据组合成一个订单
-5.canel和otter用来进行分布式服务
-6.kafka客户端以及常用命令
