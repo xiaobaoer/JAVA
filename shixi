@@ -7,3 +7,6 @@
 7.zookeeper和kafka的架构以及常用的kafka的命令
 8.mbus发消息过程
 9.学习elasticsearch,es搜索引擎
+ 
+spring:
+配置，购物车增删改查的单元测试
