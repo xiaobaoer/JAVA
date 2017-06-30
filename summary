@@ -1,0 +1,12 @@
+1.熟悉tradecenter和mbus项目代码，涉及根据交易订单查询物流订单，退货处理等业务逻辑，知识储备方面：学习binlog,kafka,zookeeper，分布式服务
+canal和otter
+2.debug项目，弄懂流程，DB改变以后传到mbus,mbus将数据库改变传到topic,交易中心tradecenter从topic拿数据用来进行业务，保持数据为更新后的状态。
+项目中handler的作用是：组合主键，通过将数据组合成一个订单。
+3.工具使用：
+ MySQL_benchwork使用
+ kafka客户端以及常用命令
+4.zookeeper和kafka的架构以及常用的kafka的命令
+5.用maven搭建一个mybatis web项目，对表进行操作，进而对购物车表进行增删改查；
+6.mbus发消息过程(还未看)
+7.学习elasticsearch,es搜索引擎（还没学）
+8.学习mybatis，包括配置文件，以及配置文件的几种方式，学习mybatis的原理
