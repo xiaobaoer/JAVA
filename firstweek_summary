@@ -9,4 +9,9 @@ canal和otter
 5.用maven搭建一个mybatis web项目，对表进行操作，进而对购物车表进行增删改查；
 6.mbus发消息过程(还未看)
 7.学习elasticsearch,es搜索引擎（还没学）
-8.学习mybatis，包括配置文件，以及配置文件的几种方式，学习mybatis的原理
+8.学习mybatis里面的点；
+  以及mybatis流程，sqlsessionfactory的构建；
+  配置文件，以及配置文件的几种方式
+  多debug，关注实现过程，mybatis掌握后要学习spring
+9.周末看静态代理
+  
