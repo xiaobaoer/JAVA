@@ -1,0 +1,32 @@
+一、properties：表示连接数据库的配置文件
+一、environments:mybatis配置多种环境，可将sql应用于多种数据库中。
+每个数据库对应一个sqlsessionfactory方法，默认的环境id是id=development,事务管理器的配置是type=jdbc,数据源的配置type=pooled，POOLED – 这是 JDBC 连接对象的数据源连接池的实现,用来避免创建新的连接实例时必要的初始连接和认证时间
+二、在mybatis中有两种事务管理器类型，jdbc和managed，jdbc依赖于从数据源得到的连接来管理事务范围
+三、mapper.xml与接口定义的联系：
+接口方法名和xml中定义的statement的id相同；
+接口方法名的输入参数类型和mapper.xml中定义的statement的parametertype的类型相同；
+接口方法的输出参数类型和mapper.xml中定义的statement的resultType的类型相同。
+四、mybatis开发dao的方法有两种：
+1.原始Dao开发：程序员要写Dao和Dao实现，需要些较多的代码，但是比较好理解；
+包括Dao和daoimp,daoimp包括dao的实现和创建sqlsessionfactory,它是在每个方法里面写sqlsession，在test里直接调用就好了；
+
+2.Mapper动态代理：程序员只需要写Mapper接口，然后按照规范进行配置，MyBatis就会自动实现类似Dao实现，减少模板方法
+不需要daoimpl，在test里创建sqlsessionfactory，再调用方法
+五、使用占位符#{}可以有效防止sql注入
+
+mappers:定义sql映射语句
+mappers是告诉mybatis从哪里去找映射文件：
+1.<mappers>  
+  <mapper resource="org/mybatis/builder/AuthorMapper.xml"/>  
+  </mappers>  
+2.<mappers>  
+  <mapper url="file:///var/mappers/AuthorMapper.xml"/>  
+  </mappers>
+3.<mappers>  
+  <mapper class="org.mybatis.builder.AuthorMapper"/>  
+  </mappers>  
+4.<mappers>  
+  <package name="org.mybatis.builder"/>  
+  </mappers>  
+
+
