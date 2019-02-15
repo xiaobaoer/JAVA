@@ -1,0 +1,8 @@
+Keytool是一个java环境下的安全钥匙与证书的管理工具，将密钥和证书存在一个称为keystore的文件中（受密码保护）。
+keyStore密钥库文件格式：
+JKS：provider为SUN，密钥库和私钥用不同的密码保护；
+JCEKS:provider为SUN JCE;
+PKCS12:个人信息交换语法标准，密钥库和私钥用相同密码保护；
+BKS:Bouncycastle Keystore，provider为BC
+UBER:与BKS相同
+证书的文件格式：DER、PKCS7、CMS、PEM
